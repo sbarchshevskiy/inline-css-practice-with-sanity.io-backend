@@ -1,12 +1,13 @@
 import {NavLink} from "react-router-dom";
+import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
   return (
-    <header className="bg-red-600">
+    <header className="bg-beige-600">
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink to="/" exact
-                   activeClassName="text-white"
+                   activeClassName="text-blue"
                    className="inflex-flex
                    items-center
                    py-6
@@ -61,11 +62,13 @@ export default function NavBar() {
             hover:text-green-800
             "
           >
-            Blog
+            Upcoming
           </NavLink>
         </nav>
-        <div>
-          
+        <div className="inline-flex py-3 px-3 my-6">
+          <SocialIcon url="https://www.linkedin.com/in/sergey-barchshevskiy/" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }}/>
+          <SocialIcon url="https://www.facebook.com/eager.avido/" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }}/>
+          <SocialIcon url="https://github.com/sbarchshevskiy/" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }}/>
         </div>
       </div>
     </header>
